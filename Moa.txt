@@ -1,0 +1,48 @@
+Moa is the a gameobject format in MxO
+
+byte[16] header;
+
+byte nameLength;
+char[nameLength] name;
+
+byte unkCount;
+byte[8] unkData;
+
+for(unkCount)
+{
+    int unk;
+}
+
+byte[56] unkData;
+
+byte count;
+for(count) 
+{
+    int modelId; // The id of the MGA mesh
+    int charLib;
+    int subMesh;
+
+    byte matValueCount;
+    
+    for(matValueCount)
+    {
+        // Known material names
+        // CMAP is the color map(?)
+        // BASE is the base texture
+    
+        char[4] matName;
+        int id; // The id of the texture
+    }
+
+    int mat1Count; // Idk what this is used for
+
+    for(mat1Count) 
+    {
+        byte type; (?)
+        byte[3] matName; 
+    
+        byte[17] unknown;
+    }
+}
+
+byte unknownByte;

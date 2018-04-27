@@ -1,0 +1,32 @@
+Mga is the a mesh format in MxO
+
+byte[23] header;
+
+short unk0;
+short unk1;
+
+short vertexCount;
+short unk2;
+short unk3;
+
+char[30] unkData;
+
+for(vertexCount) 
+{
+    float posX;
+    float posY;
+    float posZ;
+
+    float normalX;
+    float normalY;
+    float normalZ;
+    
+    float texCoordX;
+    float texCoordY;
+}
+
+while(ReadToFileEnd) 
+{
+    short index;
+}
+
