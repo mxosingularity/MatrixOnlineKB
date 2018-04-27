@@ -1,0 +1,17 @@
+Txa is the texture format used in MxO
+
+byte[28] unkHeader;
+int format; (?)
+
+short width;
+short height;
+short depth;
+
+FlexibleArray<byte> data();
+while(ReadToEndOfFile) 
+{
+	byte[] dat;
+	data.Add(dat);
+}
+
+the data is a DDS compressed texutre
